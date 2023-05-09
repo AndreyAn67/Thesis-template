@@ -98,7 +98,7 @@
 % Change definition of \thebibliography environment to use smaller font.
 \renewenvironment{thebibliography}[1]
      {\def\chaptername{}\chapter{\bibname}
-     \thispagestyle{headings}  %使参考文献列表的起始页显示页眉                            !!!
+     %\thispagestyle{headings}  %使参考文献列表的起始页显示页眉                            !!!
       \list{\@biblabel{\@arabic\c@enumiv}}%
            {\settowidth\labelwidth{\@biblabel{#1}}%
             \leftmargin\labelwidth
@@ -215,13 +215,13 @@
 {\xiaosanhao\hei
 $$
 \begin{array}{l}
-\hbox{\sanhao 论\hspace{.8mm}文\hspace{.8mm}题\hspace{.8mm}目：}\hspace{3.6mm}$\underline{\makebox[12cm][l]{\sanhao 浅议紧算子及其应用}}$\\[5.5mm]
+\hbox{\sanhao 论\hspace{.8mm}文\hspace{.8mm}题\hspace{.8mm}目：}\hspace{3.6mm}$\underline{\makebox[12cm][l]{\sanhao 题目}}$\\[5.5mm]
 \hbox{学\hspace{10.5mm}院：}\hspace{8mm}$\underline{\makebox[12cm][l]{中俄学院}}$\\[5.5mm]
 \hbox{年\hspace{10.5mm}级：}\hspace{8mm}$\underline{\makebox[12cm][l]{2019}}$\\[5.5mm]
 \hbox{专\hspace{10.5mm}业：}\hspace{8mm}$\underline{\makebox[12cm][l]{数学与应用数学}}$\\[5.5mm]
-\hbox{姓\hspace{10.5mm}名：}\hspace{8mm}$\underline{\makebox[12cm][l]{安昭龙}}$\\[5.5mm]
-\hbox{学\hspace{10.5mm}号：}\hspace{8mm}$\underline{\makebox[12cm][l]{20191236}}$\\[5.5mm]
-\hbox{指导教师：}\hspace{8mm}$\underline{\makebox[12cm][l]{王士模}}$
+\hbox{姓\hspace{10.5mm}名：}\hspace{8mm}$\underline{\makebox[12cm][l]{姓名}}$\\[5.5mm]
+\hbox{学\hspace{10.5mm}号：}\hspace{8mm}$\underline{\makebox[12cm][l]{学号}}$\\[5.5mm]
+\hbox{指导教师：}\hspace{8mm}$\underline{\makebox[12cm][l]{指导教师}}$
 \end{array}
 $$
 }
@@ -293,7 +293,7 @@ $$
 \pagestyle{fancy}
 
 
-\chapter{紧算子}
+\chapter{标题}
 \pagestyle{fancy}
 
 
@@ -341,9 +341,31 @@ $$
 
 
 
-\chapter{总结}\label{ch7}
+\chapter{总结}
 \pagestyle{fancy}
 
-\chapter*{致谢}
+\backmatter
 
+%一次管理，一次使用
+%参考文献格式：
+% \begin{thebibliography}{编号样本}
+%   \bibitem[记号]{引用标志}文献条目1
+%   \bibitem[记号]{引用标志}文献条目2
+%   ······
+% \end{thebibliography}
+%其中文献条目包括：作者，题目，出版社，年代，版本，页码等。
+%引用时候要可以采用： \cite{引用标志1，引用标志2，···}
+\begin{thebibliography}{99}
+    \bibitem{book1}William H. Press, Sual A. Teukolsky, William T. Vetterling, Brian P. Flannery, \emph{Numerical Recipes 3rd Edition: The Art of Scientific Computing}
+    Cambridge University Press, New York, 2007.
+    \bibitem{latexGuide}Kopka Helmut, W. Daly Patrick,
+    \emph{Guide to \text{\LaTeX}}, $4^{th}$ Edition. Available at \texttt{http://www.amazon.com}.
+    \bibitem{latexMath}Graetzer George, \emph{Math Into \text{\LaTeX}},
+    BirkhAuser Boston; 3 edition (June 22, 2000).    
+\end{thebibliography}
+
+
+
+\chapter{致谢}
+\pagestyle{fancy}
 \end{document}
