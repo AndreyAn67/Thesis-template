@@ -1,6 +1,11 @@
-Article.pdf
-Article.synctex.gz
-Article.tex
-Article.log
-Article.toc
-Article.aux
+cn/Article.pdf
+ru/Article-ru.aux
+ru/Article-ru.log
+ru/Article-ru.pdf
+ru/Article-ru.synctex.gz
+ru/Article-ru.toc
+cn/Article.aux
+.gitignore
+cn/Article.log
+cn/Article.toc
+cn/Article.synctex.gz
