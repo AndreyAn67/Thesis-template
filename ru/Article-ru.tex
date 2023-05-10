@@ -1,6 +1,5 @@
 \documentclass[openany]{book}
 
-%\usepackage{ctex}
 \usepackage{graphicx} 
 \usepackage{amsfonts} 
 \usepackage{amsthm}    %定理和证明类环境的配置
@@ -21,13 +20,15 @@
 \usepackage{enumerate}
 \usepackage[font=normalsize,labelfont=bf,textfont=bf]{caption}  % 图标的标题字体和自号
 
-\usepackage{polyglossia} %注意，在需要输入英语时使用命令\textenglish{}
+\usepackage{polyglossia} %注意，在需要输入英语时使用命令\textenglish{},输入汉语使用命令\textchinese{}
 \setmainlanguage{russian}
 \setotherlanguage{english}
+\setotherlanguage{chinese}
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Times New Roman}
 \setsansfont{Arial}
 \righthyphenmin=2
+\newfontfamily\chinesefont{SimSun}
 
 
 \DeclareCaptionLabelSeparator{twospace}{\ ~}  % 将图表标题中的冒号改成空格
@@ -244,16 +245,6 @@ $$
 
 \chapter{Конспект}
 \renewcommand{\thepage}{\Roman{page}} %从现在开始页号为大写罗马体
-Тесные операторы обладают многими важными свойствами, такими как конечная размерность, замкну\-тость и непрерывность, и широко используются в математике и физике. 
-На практике основная цель тесных операторов - преобразовать задачи бесконечной размерности в задачи конечной размерности, тем самым делая анализ и решение задач более простыми и выполнимыми.
-Это делает анализ и решение задачи более простым и выполнимым.
-
-В данной статье дается краткое введение в понятие тесных операторов и рассматриваются примеры применения тесных операторов в математике.
-Во-первых, в статье дается определение и свойства плотных операторов и их хорошие арифметические свойства, а также приводятся некоторые основные примеры плотных операторов.
-Наконец, в конце статьи приводится краткое описание применения узких операторов в математике.
-
-Переведено с помощью www.DeepL.com/Translator (бесплатная версия)
-
 
 
 \vspace{1.5cm}
